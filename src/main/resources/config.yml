@@ -1,0 +1,110 @@
+# TabRanks Configuratie
+# Gebruik & voor kleurcodes (bijv. &a = groen, &c = rood, &e = geel, &b = aqua)
+# Kleurcodes: &0=zwart &1=donkerblauw &2=donkergroen &3=cyaan &4=donkerrood
+#             &5=paars &6=goud &7=grijs &8=donkergrijs &9=blauw
+#             &a=groen &b=aqua &c=rood &d=roze &e=geel &f=wit
+# Opmaak:     &l=vet &o=cursief &n=onderstreept &m=doorstreept &r=reset
+
+tablist:
+  # Koptekst van de TAB-lijst
+  header: |
+    &6&l✦ &e&lMijnServer &6&l✦
+    &7Welkom op onze server!
+  # Voettekst van de TAB-lijst
+  footer: |
+    &7Online spelers: &e{online}&7/&e{max}
+    &8discord.mijnserver.nl
+
+  # Update-interval in ticks (20 ticks = 1 seconde)
+  update-interval: 40
+
+ranks:
+  owner:
+    prefix: "&4[&c&lOWNER&4] &c"
+    suffix: ""
+    tabcolor: "&c"
+    priority: 1
+    display-name: "Owner"
+
+  admin:
+    prefix: "&4[&4&lADMIN&4] &c"
+    suffix: ""
+    tabcolor: "&4"
+    priority: 2
+    display-name: "Admin"
+
+  developer:
+    prefix: "&2[&a&lDEV&2] &a"
+    suffix: ""
+    tabcolor: "&a"
+    priority: 3
+    display-name: "Developer"
+
+  moderator:
+    prefix: "&1[&9&lMOD&1] &9"
+    suffix: ""
+    tabcolor: "&9"
+    priority: 4
+    display-name: "Moderator"
+
+  helper:
+    prefix: "&3[&b&lHELPER&3] &b"
+    suffix: ""
+    tabcolor: "&b"
+    priority: 5
+    display-name: "Helper"
+
+  builder:
+    prefix: "&8[&7&lBUILDER&8] &7"
+    suffix: ""
+    tabcolor: "&7"
+    priority: 6
+    display-name: "Builder"
+
+  streamer:
+    prefix: "&5[&d&l▶ STREAMER&5] &d"
+    suffix: ""
+    tabcolor: "&d"
+    priority: 7
+    display-name: "Streamer"
+
+  youtuber:
+    prefix: "&4[&c&l▶ YOUTUBE&4] &c"
+    suffix: ""
+    tabcolor: "&c"
+    priority: 8
+    display-name: "YouTuber"
+
+  mvp:
+    prefix: "&6[&e&lMVP&6] &e"
+    suffix: ""
+    tabcolor: "&e"
+    priority: 9
+    display-name: "MVP"
+
+  vip_plus:
+    prefix: "&6[&6&lVIP&e&l+&6] &6"
+    suffix: ""
+    tabcolor: "&6"
+    priority: 10
+    display-name: "VIP+"
+
+  vip:
+    prefix: "&e[&6&lVIP&e] &6"
+    suffix: ""
+    tabcolor: "&6"
+    priority: 11
+    display-name: "VIP"
+
+  player:
+    prefix: "&7[&f&lSPELER&7] &f"
+    suffix: ""
+    tabcolor: "&f"
+    priority: 100
+    display-name: "Speler"
+
+# Standaard rang voor nieuwe spelers
+default-rank: player
+
+# Bewaar rangen op schijf (bij false worden rangen niet bewaard na herstart)
+save-data: true
